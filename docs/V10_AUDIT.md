@@ -1,0 +1,2 @@
+# V10 audit (findings that drove v11/v12)
+* Global staff PIN default 2468 → removed. * Plaintext-style profile with no accounts → local accounts. * One participant ID for all exports → per-session pseudonymous IDs. * Indicators used labels steady/watch/support → neutral wording + minimum evidence. * Only 12 games, 10 gentle → 19 registered, 9 with real challenge. * No hint logging → support engine. * Not compiled then, not compiled now.

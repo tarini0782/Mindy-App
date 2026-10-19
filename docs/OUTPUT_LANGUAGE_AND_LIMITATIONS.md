@@ -1,0 +1,2 @@
+# Output language
+Allowed: "Not enough information", "Observed during this session", "Worth reviewing across additional sessions", "Task completed with available support". Banned: diagnosis, disorder names, risk, "has", "suffers", severity labels. Every card shows evidence numbers, the rule, and other possible explanations. Cut-offs are not clinical. A tap at the wrong moment can mean tiredness, a different interpretation of the instructions, a small screen, or an ordinary day.

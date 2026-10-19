@@ -1,0 +1,2 @@
+# Research session flow
+register → login → caregiver profile → child profile → consent + assent → pre-play check-in → game (research mode, stored) → post-play check-in → observations → history → export (researcher only). Practice mode (Games tab) is never stored. Interruption: pausing stops the event clock; an abandoned session is stored as unfinished. **Resume of a half-finished journey after app kill is not implemented.**

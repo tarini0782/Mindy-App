@@ -1,0 +1,2 @@
+# Hint and challenge design
+Ladder: independent → visual cue → small hint → demonstration → easier level → break offer. Triggers: consecutive errors 3/4/5/6/8, idle 15 s, help button; max 10 automatic supports per session; "easier" skipped in FIXED_BASELINE. Each support event is logged (stage code, time) and difficulty changes are logged with the new level. Before/after outcome comparison is derived from event order; a separate trigger-type column is **not** exported yet (known gap). See HINT_AND_SUPPORT_POLICY.md and CHALLENGE_DESIGN.md.

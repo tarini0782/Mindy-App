@@ -1,0 +1,2 @@
+# Rule validation plan (not yet executed)
+1. Obtain ethics approval and caregiver consent. 2. Collect pilot sessions with the app. 3. Collect parent-reported SDQ separately. 4. Export CSV, run `mindy_ml` baselines at child level (no leakage). 5. Report agreement with confidence intervals, and false-positive "worth reviewing" rates. 6. Revise cut-offs only on training children, then re-test on held-out children. Until then cut-offs are engineering defaults.

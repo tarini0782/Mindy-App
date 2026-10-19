@@ -1,0 +1,26 @@
+Flutter only loads asset folders that are listed in pubspec.yaml (it does not
+look inside sub-folders on its own). In C:\mindy_app\pubspec.yaml make the
+"flutter:" section contain at least this (keep your existing lines too):
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+    - assets/characters/kara/
+    - assets/characters/nova/
+    - assets/characters/lumi/
+    - assets/characters/bubbles/
+    - assets/characters/pip/
+    - assets/characters/twinkle/
+    - assets/worlds/magic_garden/
+    - assets/worlds/bubble_valley/
+    - assets/worlds/memory_castle/
+    - assets/worlds/superhero_academy/
+    - assets/worlds/rainbow_kingdom/
+    - assets/worlds/dragon_valley/
+    - assets/effects/
+    - assets/sounds/
+    - assets/music/
+
+Dependencies needed (same as v5, nothing new): audioplayers,
+flutter_local_notifications, image_picker. Then run: flutter pub get

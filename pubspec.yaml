@@ -1,0 +1,80 @@
+name: mindy_app
+description: >-
+  Mindy - an emotion-adaptive activity companion for children.
+  Final-year research prototype. Not a medical or diagnostic tool.
+publish_to: "none"
+version: 0.28.0+28
+
+# The code uses Dart 3 features (records, switch expressions, patterns).
+# The floor is 3.6 because Color.withValues() is used throughout, which
+# arrived with Flutter 3.27 / Dart 3.6 and replaced the deprecated
+# withOpacity().
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+# Every package below is actually imported somewhere in lib/ or test/.
+# Nothing is listed "just in case".
+#
+# If `flutter pub get` fails to resolve these versions on your machine
+# (they were written without a live pub server to check against), run:
+#     flutter pub upgrade --major-versions
+# and commit the pubspec.lock that produces.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Local persistence for sessions, settings, accounts, consent.
+  # This is the app's only datastore - see docs/DATA_AND_PRIVACY.md.
+  shared_preferences: ^2.3.2
+
+  # Optional sync to the local research backend, and the insight endpoint.
+  http: ^1.2.2
+
+  # Hashing for pseudonymous participant codes and password checks.
+  crypto: ^3.0.5
+
+  # Short sound effects and background loops. Every call is wrapped in
+  # try/catch, so missing audio files degrade to silence.
+  audioplayers: ^6.1.0
+
+  # Local play-time reminders.
+  flutter_local_notifications: ^17.2.3
+
+  # Caregiver "ask about a report" screen (photo of a report or x-ray).
+  image_picker: ^1.1.2
+
+  # Vector artwork for characters and worlds.
+  flutter_svg: ^2.0.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Flutter does not recurse into sub-folders, so every folder is listed.
+  # These folders currently hold README.txt placeholders plus the .wav
+  # effects; the app runs without the art and audio present.
+  assets:
+    - assets/audio/
+    - assets/effects/
+    - assets/music/
+    - assets/sounds/
+    - assets/characters/bubbles/
+    - assets/characters/kara/
+    - assets/characters/lumi/
+    - assets/characters/nova/
+    - assets/characters/pip/
+    - assets/characters/twinkle/
+    - assets/worlds/bubble_bay/
+    - assets/worlds/bubble_valley/
+    - assets/worlds/dragon_valley/
+    - assets/worlds/friendship_garden/
+    - assets/worlds/magic_garden/
+    - assets/worlds/memory_castle/
+    - assets/worlds/pal_playground/
+    - assets/worlds/rainbow_kingdom/
+    - assets/worlds/sky_meadow/
+    - assets/worlds/superhero_academy/

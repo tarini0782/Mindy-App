@@ -1,0 +1,1 @@
+Optional effect sprites.
